@@ -1,0 +1,9 @@
+.period_switch {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.period {
+    color: var(--period-text-clr);
+}

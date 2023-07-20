@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+/* == Custom properties == */
+:root {
+    /* = Colors = */
+    /* Primary */
+
+    --gradient: linear-gradient(90deg,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%));    
+    
+    /* Neutral */
+    --main-bg-clr: hsl(240, 78%, 98%);
+    --period-text-clr: hsl(234, 14%, 74%);
+    --main-text-clr: hsl(233, 13%, 49%);
+    --price-text-clr: hsl(232, 13%, 33%);
+    --white: hsl(0, 0%, 100%);
+
+    /* = Font = */
+    --ff: 'Montserrat', sans-serif;
+    --fs: 0.938rem;
+    --fw-bold: 700;
+
+    /* = Spacing = */
+    --mobile-pad-b: 4.5rem;
+    --mobile-pad-i: 1.5rem;
+}
+
+/* == Global styles == */
+html {
+    position: relative;
+}
+
+body {
+    font-family: var(--ff);
+    font-size: var(--fs);
+    background-color: var(--main-bg-clr);
+}
+
+body::before,
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+body::before {
+    background: 
+      url("../public/bg-top.svg")
+        no-repeat
+        12rem -2rem;
+}
+
+@media screen and (min-width: 768px) {
+    
+}

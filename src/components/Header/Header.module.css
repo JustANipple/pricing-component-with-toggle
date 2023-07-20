@@ -1,0 +1,10 @@
+.header {
+    display: grid;
+    justify-items: center;
+    gap: 2.5rem;
+}
+
+.title {
+    color: var(--main-text-clr);
+    line-height: 1;
+}
