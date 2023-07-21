@@ -1,0 +1,61 @@
+.plan {
+    /* Default colors */
+    --plan-bg-clr: var(--white);
+    --price-txt-clr: var(--price-text-clr);
+    --list-txt-clr: var(--main-text-clr);
+    --btn-bg: var(--gradient);
+    --btn-txt-clr: var(--white);
+
+    background-color: var(--plan-bg-clr);
+    padding: 2rem 1.75rem;
+    display: grid;
+    justify-items: center;
+    row-gap: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0px 0rem 3rem -2.25rem var(--price-text-clr);
+}
+
+.type {
+    font-size: calc(var(--fs) * 1.25);
+}
+
+.price {
+    color: var(--price-txt-clr);
+    font-size: calc(var(--fs) * 4.75);
+    display: flex;
+    align-items: center;
+    line-height: 1;
+}
+
+.price span {
+    font-size: calc(var(--fs) * 2.5);
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    color: var(--list-txt-clr);
+}
+
+.list li {
+    padding-block: .875rem;
+    border-top: 1px solid var(--period-text-clr);
+}
+
+.list li:last-child {
+    border-bottom: 1px solid var(--period-text-clr);
+}
+
+.button {
+    width: 100%;
+    border-radius: .5rem;
+    border: none;
+    padding: .75rem;
+    text-transform: uppercase;
+    background: var(--btn-bg);
+    color: var(--btn-txt-clr);
+    font-size: calc(var(--fs) / 1.25);
+    letter-spacing: 2px;
+}

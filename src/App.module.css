@@ -14,4 +14,11 @@
 
 .main {
     padding: var(--mobile-pad-b) var(--mobile-pad-i);
+	display: grid;
+	row-gap: 4.875rem;
+}
+
+.plans {
+	display: grid;
+	row-gap: 2rem;
 }

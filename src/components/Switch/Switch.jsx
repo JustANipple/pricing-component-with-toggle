@@ -1,6 +1,11 @@
 import styles from "./Switch.module.css"
 
-const Switch = () => {
+// eslint-disable-next-line react/prop-types
+const Switch = ({ toggleState, toggleSetter }) => {
+
+    function handleClick() {
+        toggleSetter(!toggleState)
+    }
 
     return (
         <div className={styles.switch_cont}>
@@ -12,6 +17,8 @@ const Switch = () => {
             <input 
                 type="checkbox" 
                 id={styles.switch}
+                checked={toggleState}
+                onChange={handleClick}
             />
         </div>
     )
