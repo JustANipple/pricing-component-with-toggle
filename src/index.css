@@ -86,7 +86,7 @@ body::after {
 
 body::before {
     background: 
-      url("../public/bg-top.svg")
+      url("/bg-top.svg")
         no-repeat
         clamp(12rem, 98.613vw - 11.112rem, 52rem) -2rem;
 }
@@ -95,14 +95,14 @@ body::before {
 
   body::before {
     background: 
-      url("../public/bg-top.svg")
+      url("/bg-top.svg")
         no-repeat
         top right;
   }
 
   body::after {
     background: 
-      url("../public/bg-bottom.svg")
+      url("/bg-bottom.svg")
         no-repeat
         bottom left;
     z-index: -1;
