@@ -10,14 +10,14 @@
     position: relative;
 }
 
-#switch {
+.switch {
     appearance: none;
     width: 100%;
     height: 100%;
     cursor: pointer;
 }
 
-#switch::before {
+.switch::before {
     content: "";
     position: absolute;
     background-color: var(--white);
@@ -27,7 +27,7 @@
     transition: all .125s ease-in-out;
 }
 
-#switch:checked::before {
+.switch:checked::before {
     transform: translateX(calc(var(--width) - var(--height)));
 }
 
