@@ -19,6 +19,7 @@ const Switch = ({ toggleState, toggleSetter }) => {
                 id={styles.switch}
                 checked={toggleState}
                 onChange={handleClick}
+                className="switch"
             />
         </div>
     )
