@@ -33,7 +33,7 @@ Users should be able to:
 
 - HTML Solution URL: [HTML](https://github.com/JustANipple/pricing-component-with-toggle/blob/main/index.html)
 - Plan JSX Solution URL: [PLAN](https://github.com/JustANipple/pricing-component-with-toggle/blob/main/src/components/Plan/Plan.jsx)
-- Live Site URL: [LIVE](https://pricing-component-with-toggle-navy-alpha.vercel.app)
+- Live Site URL: [LIVE](https://pricing-component-with-toggle-justanipple.vercel.app)
 
 ## My process
 
