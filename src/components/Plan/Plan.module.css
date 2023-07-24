@@ -74,7 +74,7 @@
     color: var(--btn-txt-clr);
     font-size: calc(var(--fs) / 1.25);
     letter-spacing: 2px;
-    border: 1px solid transparent;
+    border: 1px solid white;
     transition: all .125s ease-in-out;
 }
 
