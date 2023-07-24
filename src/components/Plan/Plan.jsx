@@ -3,8 +3,11 @@ import styles from "./Plan.module.css"
 
 const Plan = ({ type, monthlyPrice, annualPrice, features, toggleState, themeDark }) => {
 
+    const planClass = themeDark ? `${styles.plan} ${styles.dark_theme}` : `${styles.plan}`;
+
     return (
-        <div className={styles.plan}>
+
+        <div className={planClass}>
             <p className={styles.type}>{type}</p>
             <p className={styles.price}>
                 <span>$</span>{toggleState ? monthlyPrice : annualPrice}

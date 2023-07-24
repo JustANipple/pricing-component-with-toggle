@@ -32,10 +32,12 @@ p, h1, h2, h3, h4, h5, h6 {
 :root {
     /* = Colors = */
     /* Primary */
+    --btn-grad-deg: 90deg;
+    --plan-grad-deg: 135deg;
 
-    --gradient: linear-gradient(90deg,
-    hsl(236, 72%, 79%),
-    hsl(237, 63%, 64%));    
+    --grad-clrs: 
+      hsl(236, 72%, 79%), 
+      hsl(237, 63%, 64%);    
     
     /* Neutral */
     --main-bg-clr: hsl(240, 78%, 98%);
@@ -55,6 +57,12 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* == Global styles == */
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
 html {
     position: relative;
 }
@@ -69,20 +77,34 @@ body::before,
 body::after {
     content: "";
     position: absolute;
+    pointer-events: none;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    pointer-events: none;
 }
 
 body::before {
     background: 
       url("../public/bg-top.svg")
         no-repeat
-        12rem -2rem;
+        clamp(12rem, 98.613vw - 11.112rem, 52rem) -2rem;
 }
 
 @media screen and (min-width: 768px) {
-    
+
+  body::before {
+    background: 
+      url("../public/bg-top.svg")
+        no-repeat
+        top right;
+  }
+
+  body::after {
+    background: 
+      url("../public/bg-bottom.svg")
+        no-repeat
+        bottom left;
+    z-index: -1;
+  }
 }

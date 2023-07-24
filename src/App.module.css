@@ -20,5 +20,14 @@
 
 .plans {
 	display: grid;
+	justify-items: center;
 	row-gap: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+	.plans {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
