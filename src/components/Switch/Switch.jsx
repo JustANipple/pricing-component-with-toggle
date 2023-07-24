@@ -16,7 +16,7 @@ const Switch = ({ toggleState, toggleSetter }) => {
             </label>
             <input 
                 type="checkbox" 
-                id="switch"
+                id={styles.switch}
                 checked={toggleState}
                 onChange={handleClick}
             />
